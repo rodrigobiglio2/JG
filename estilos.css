@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: crimson;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    vertical-align:bottom;
+    object-fit: contain;
+}
+
+
+
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.854);
+}
+
+.boton{
+    width: 180px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 15px 0;
+    background-image: linear-gradient(130deg, black, blue);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    &:active{
+        scale: .9;
+        box-shadow: 3px 3px 10px black, -3px -3px 10px black ;
+    }
+}
+
+.btn-error{
+    background-image: linear-gradient(red, black);
+}
+.btn-correcto{
+    background-image: linear-gradient(green, black);
+}
+
+.posicion0{
+    order: 1;
+}
+.posicion1{
+    order: 2;
+}
+.posicion2{
+    order: 3;
+}
+.posicion3{
+    order: 4;
+}
+
+.boton-inicio{
+    margin-top: 20px;
+    height: 35px;
+    width: 180px;
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    background-color: rgba(31, 171, 171, 0.652);
+}
+
+.hide{
+    display: none;
+}
